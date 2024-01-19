@@ -1,0 +1,31 @@
+/* Estilo base de la imagen */
+.img-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .img-container img {
+    transition: opacity 2s ease-out;
+  }
+  
+  /* Efecto de pulsación al pasar el cursor */
+  .img-container:hover img {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  body{
+    background-color: aqua;
+  }
